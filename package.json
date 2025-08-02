@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-mlkit",
+  "version": "0.0.1",
+  "description": "Cordova MLKit Plugin",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumo01GitHub/cordova-plugin-mlkit.git"
+  },
+  "author": "kumo01",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kumo01GitHub/cordova-plugin-mlkit/issues"
+  },
+  "homepage": "https://github.com/kumo01GitHub/cordova-plugin-mlkit#readme",
+  "devDependencies": {
+    "@cordova/eslint-config": "^6.0.0",
+    "plugman": "^3.0.1"
+  }
+}
