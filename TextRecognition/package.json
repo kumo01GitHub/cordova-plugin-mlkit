@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-mlkit-textrecognition",
+  "version": "0.0.1",
+  "description": "Cordova MLKit TextRecognition Plugin",
+  "cordova": {
+    "id": "cordova-plugin-mlkit-textrecognition",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "kumo01",
+  "license": "Apache 2.0"
+}
