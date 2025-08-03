@@ -23,7 +23,17 @@
         <config-file parent="/*" target="AndroidManifest.xml">
         </config-file>
 
+        <config-file target="config.xml" parent="/*">
+            <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+        </config-file>
+
         <source-file src="src/android/TextRecognition.java" target-dir="src/org/apache/cordova/mlkit/textrecognition/" />
+
+        <framework src="com.google.android.gms:play-services-mlkit-text-recognition:19.+" />
+        <framework src="com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.+" />
+        <framework src="com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.+" />
+        <framework src="com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.+" />
+        <framework src="com.google.android.gms:play-services-mlkit-text-recognition-korean:16.+" />
     </platform>
 
     <platform name="ios">
@@ -31,9 +41,23 @@
             <feature name="TextRecognition">
                 <param name="ios-package" value="CDVTextRecognition" />
             </feature>
+            <preference name="deployment-target" value="16.1" />
         </config-file>
 
         <header-file src="src/ios/CDVTextRecognition.h"/>
         <source-file src="src/ios/CDVTextRecognition.m" />
+
+        <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/" />
+            </config>
+            <pods use-frameworks="true">
+                <pod name="MLKitTextRecognition" spec="~> 7.0" />
+                <pod name="MLKitTextRecognitionChinese" spec="~> 6.0" />
+                <pod name="MLKitTextRecognitionDevanagari" spec="~> 6.0" />
+                <pod name="MLKitTextRecognitionJapanese" spec="~> 6.0" />
+                <pod name="MLKitTextRecognitionKorean" spec="~> 6.0" />
+            </pods>
+        </podspec>
     </platform>
 </plugin>
