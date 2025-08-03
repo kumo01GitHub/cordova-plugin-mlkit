@@ -22,7 +22,7 @@ const nodeConfig = require('@cordova/eslint-config/node');
 const nodeTestConfig = require('@cordova/eslint-config/node-tests');
 
 module.exports = defineConfig([
-    globalIgnores([]),
+    globalIgnores(['MLKitApp/*']),
     ...nodeConfig,
     ...nodeTestConfig
 ]);

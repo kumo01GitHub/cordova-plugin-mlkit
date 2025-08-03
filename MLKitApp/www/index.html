@@ -19,7 +19,7 @@
 -->
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <!--
         Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
             https://cordova.apache.org/docs/en/latest/
@@ -28,12 +28,18 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+        />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta
+            name="viewport"
+            content="initial-scale=1, width=device-width, viewport-fit=cover"
+        />
+        <meta name="color-scheme" content="light dark" />
+        <link rel="stylesheet" href="css/index.css" />
         <title>Hello World</title>
     </head>
     <body>
@@ -43,8 +49,35 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
+            <table id="mlkit">
+                <thead>
+                    <tr>
+                        <th>Function</th>
+                        <th>Button</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TextRecognition</td>
+                        <td>
+                            <button onclick="onButtonClick('TextRecognition')">
+                                click!
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sample</td>
+                        <td>
+                            <button onclick="onButtonClick('sample')">
+                                click!
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
+        <script src="js/mlkit.js"></script>
     </body>
 </html>

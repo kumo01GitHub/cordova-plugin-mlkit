@@ -1,8 +1,8 @@
-/********* TextRecognition.m Cordova Plugin Implementation *******/
+/********* CDVTextRecognition.m Cordova Plugin Implementation *******/
 
-#import "TextRecognition.h"
+#import "CDVTextRecognition.h"
 
-@implementation TextRecognition
+@implementation CDVTextRecognition
 
 - (void)coolMethod:(CDVInvokedUrlCommand*)command
 {

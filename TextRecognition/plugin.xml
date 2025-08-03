@@ -10,7 +10,7 @@
     <license>Apache 2.0</license>
 
     <js-module name="TextRecognition" src="www/TextRecognition.js">
-        <clobbers target="cordova.plugins.mlkit.TextRecognition" />
+        <clobbers target="cordova.plugins.mlkit.textrecognition" />
     </js-module>
 
     <platform name="android">
@@ -29,11 +29,11 @@
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
             <feature name="TextRecognition">
-                <param name="ios-package" value="TextRecognition" />
+                <param name="ios-package" value="CDVTextRecognition" />
             </feature>
         </config-file>
 
-        <header-file src="src/ios/TextRecognition.h"/>
-        <source-file src="src/ios/TextRecognition.m" />
+        <header-file src="src/ios/CDVTextRecognition.h"/>
+        <source-file src="src/ios/CDVTextRecognition.m" />
     </platform>
 </plugin>

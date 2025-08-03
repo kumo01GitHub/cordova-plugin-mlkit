@@ -5,8 +5,8 @@
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {
-    "build:android": "cordova build android",
-    "build:ios": "cordova build ios",
+    "build:android": "cordova prepare android && cordova build android",
+    "build:ios": "cordova prepare ios && cordova build ios",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,6 +15,7 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "devDependencies": {
+    "cordova": "^12.0.0",
     "cordova-android": "^14.0.1",
     "cordova-ios": "^7.1.1",
     "cordova-plugin-mlkit-textrecognition": "file:../TextRecognition"

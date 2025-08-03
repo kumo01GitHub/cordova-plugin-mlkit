@@ -2,7 +2,7 @@
 
 #import <Cordova/CDV.h>
 
-@interface TextRecognition : CDVPlugin {
+@interface CDVTextRecognition : CDVPlugin {
   // Member variables go here.
 }
 
